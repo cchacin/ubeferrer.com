@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<!-- MAIN CONTENT SECTION -->
+<section class="mainContent clearfix">
+  <div class="container">
+
+    <div class="page-header content">
+      <h4>Featured Collection</h4>
+    </div>
+
+    <div class="row featuredCollection">
+      {% for collections_hash in site.data.collections %}
+      {% assign collection = collections_hash[1] %}
+      <div class="col-md-6 col-lg-4">
+        <div class="thumbnail" onclick="location.href='single-product.html';">
+          <div class="imageWrapper">
+            <img src="assets/img/home/featured-collection/featured-collection-01.jpg" alt="feature-collection-image">
+            <div class="caption">
+              <h3>{{ collection.name }} Collections</h3>
+              <small>Start From ${{ collection.starts_from }}</small>
+            </div>
+            <div class="masking">
+              <a href="{{ collection.name }}.html" class="btn viewBtn">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

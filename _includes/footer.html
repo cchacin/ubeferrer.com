@@ -1,35 +1,108 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
+<!-- FOOTER -->
+<div class="footer clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-12">
+        <div class="footerLink">
+          <h5>Accessories</h5>
+          <ul class="list-unstyled">
+            <li><a href="javascript:void(0)">Body care </a></li>
+            <li><a href="javascript:void(0)">Chambray </a></li>
+            <li><a href="javascript:void(0)">Floral </a></li>
+            <li><a href="javascript:void(0)">Rejuvination </a></li>
+            <li><a href="javascript:void(0)">Shaving </a></li>
+            <li><a href="javascript:void(0)">Toilette </a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+      <div class="col-md-2 col-12">
+        <div class="footerLink">
+          <h5>BRANDS</h5>
+          <ul class="list-unstyled">
+            <li><a href="javascript:void(0)">Barbour </a></li>
+            <li><a href="javascript:void(0)">Brioni </a></li>
+            <li><a href="javascript:void(0)">Oliver Spencer</a></li>
+            <li><a href="javascript:void(0)">Belstaff</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+      <div class="col-md-2 col-12">
+        <div class="footerLink">
+          <h5>Accessories</h5>
+          <ul class="list-unstyled">
+            <li><a href="javascript:void(0)">Body care </a></li>
+            <li><a href="javascript:void(0)">Chambray </a></li>
+            <li><a href="javascript:void(0)">Floral </a></li>
+            <li><a href="javascript:void(0)">Rejuvination </a></li>
+            <li><a href="javascript:void(0)">Shaving </a></li>
+            <li><a href="javascript:void(0)">Toilette </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footerLink text-nowrap">
+          <h5>Get in Touch</h5>
+          <ul>
+            <li><a href="tel:555-555-5555">Call us at (555)-555-5555</a></li>
+            <li><a href="mailto:support@iamabdus.com">support@iamabdus.com</a></li>
+          </ul>
+          <ul class="list-inline">
+            <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="fab fa-dribbble"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="fab fa-vimeo-v"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="fab fa-tumblr"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-12">
+        <div class="newsletter clearfix">
+          <h4>Newsletter</h4>
+          <h3>Sign up now</h3>
+          <p>Enter your email address and get notified about new products. We hate spam!</p>
+          <form class="input-group">
+            <input type="text" class="form-control" required placeholder="your email address"
+              aria-describedby="basic-addon2">
+            <button type="submit" class="input-group-addon" id="basic-addon2">go <i
+                class="fa fa-chevron-right"></i></button>
+          </form>
+        </div>
       </div>
     </div>
-
   </div>
+</div>
 
-</footer>
+<!-- COPY RIGHT -->
+<div class="copyRight clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-12">
+        <p>&copy; <span id="copy-year"></span> Copyright Bigbag Store Bootstrap Template by <a target="_blank"
+            href="http://www.iamabdus.com/">Abdus</a>.</p>
+      </div>
+      <div class="col-md-5 col-12">
+        <ul class="list-inline">
+          <li>
+            <a href="javascript:void(0)"><img src="assets/img/home/footer/card1.png"></a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)"><img src="assets/img/home/footer/card2.png"></a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)"><img src="assets/img/home/footer/card3.png"></a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)"><img src="assets/img/home/footer/card4.png"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

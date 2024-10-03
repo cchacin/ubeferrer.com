@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<!-- LIGHT SECTION -->
+<section class="lightSection clearfix pageHeader">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="page-title">
+          <h2>Shoes</h2>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ol class="breadcrumb float-end">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">shop</a>
+          </li>
+          <li class="active">Shoes</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT SECTION -->
+<section class="mainContent clearfix productsContent">
+  <div class="container">
+    <div class="row">
+      {% assign collection = collections_hash[1] %}
+      {% for product in site.data.collections[page.tag].products %}
+      <div class="col-lg-3 col-md-4 ">
+        <div class="productBox">
+          <div class="productImage clearfix">
+            <a href="{{ product.link }}" target="_blank">
+              <img src="https://images.amazon.com/images/P/{{ product.asin }}.jpg" alt="products-img">
+            </a>
+          </div>
+          <div class="productCaption clearfix">
+            <a href="{{ product.link }}" target="_blank">
+              <h5>{{ product.title }}</h5>
+            </a>
+            <h3>${{ product.price }}</h3>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

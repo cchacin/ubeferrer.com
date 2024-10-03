@@ -1,0 +1,42 @@
+<!-- BANNER SLIDER -->
+<section class="banner_slider_wrapper clearfix">
+    <div class="banner_slider_inner">
+        <div class="container">
+            <div class="banner_slider mb-0">
+                {% for product in site.data.banner.products %}
+                <div class="item">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <div class="content">
+                                <h6>Limited time offer!</h6>
+
+                                <h1>Huge Summer Sale</h1>
+
+                                <p class="text-truncate">Hats, Sunglusses, Bags, Shoes & much more, it is a long
+                                    established fact
+                                    that a reader will be distracted by the readable content of a page when looking
+                                    layout. </p>
+
+                                <a target="_blank"
+                                    href="{{ product.link }}"
+                                    class="btn btn-primary-outlined btn-sm">
+                                    Buy Now <span><i class="fa fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <picture class="image">
+                                <source srcset="assets/img/home/banner-slider/sl1.png" media="(min-width: 1000px)">
+                                <source srcset="assets/img/home/banner-slider/sl1-md.png" media="(min-width: 600px)">
+                                <img class="img-fluid" src="assets/img/home/banner-slider/sl1-sm.png"
+                                    alt="slider-image">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

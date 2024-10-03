@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+{%- include head.html -%}
 
-  {%- include head.html -%}
+<body id="body" class="body-wrapper sidebar-dark version1 up-scroll">
 
-  <body>
+  <div class="main-wrapper home">
 
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    {{ content }}
+
+    <!-- LIGHT SECTION -->
+    <section class="lightSection clearfix">
+      <div class="container">
+        <div class="owl-carousel partnersLogoSlider" dir="ltr">
+          <div class="slide">
+            <div class="partnersLogo clearfix">
+              <img src="assets/img/home/partners/partner-01.png" alt="partner-img">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="partnersLogo clearfix">
+              <img src="assets/img/home/partners/partner-02.png" alt="partner-img">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="partnersLogo clearfix">
+              <img src="assets/img/home/partners/partner-03.png" alt="partner-img">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="partnersLogo clearfix">
+              <img src="assets/img/home/partners/partner-04.png" alt="partner-img">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="partnersLogo clearfix">
+              <img src="assets/img/home/partners/partner-05.png" alt="partner-img">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="partnersLogo clearfix">
+              <img src="assets/img/home/partners/partner-01.png" alt="partner-img">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="partnersLogo clearfix">
+              <img src="assets/img/home/partners/partner-02.png" alt="partner-img">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="partnersLogo clearfix">
+              <img src="assets/img/home/partners/partner-03.png" alt="partner-img">
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </section>
+  </div>
+  
+  {%- include product-quick-view-modal.html -%}
+  {%- include footer.html -%}
+  {%- include scripts.html -%}
 
-    {%- include footer.html -%}
-
-  </body>
-
+</body>
 </html>

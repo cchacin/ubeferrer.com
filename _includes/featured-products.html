@@ -1,0 +1,44 @@
+<section class="mainContent clearfix featured_products_slider_area pt-4">
+    <div class="container">
+        <div class="page-header">
+            <h4>Featured Products</h4>
+        </div>
+    </div>
+
+    <div class="container container-inner">
+        <div class=" featuredProducts featuredProductsSlider featured_products_slider mb-0" dir="ltr">
+            {% for collections_hash in site.data.collections %}
+            {% assign collection = collections_hash[1] %}
+            {% for product in collection.products %}
+            {% if product.featured %}
+            <div class="slide">
+                <div class="productImage clearfix">
+                    <img src="https://images.amazon.com/images/P/{{ product.asin }}.jpg" alt="featured-product-img">
+                    <div class="productMasking">
+                        <ul class="list-inline btn-group" role="group">
+                            <li><a class="btn btn-default btn-wishlist"><i class="far fa-heart"></i></a></li>
+                            <li><a href="javascript:void(0)" class="btn btn-default" data-toast
+                                    data-toast-type="success" data-toast-position="topRight"
+                                    data-toast-icon="icon-circle-check" data-toast-title="Product"
+                                    data-toast-message="successfuly added to cart!"><i
+                                        class="fa fa-shopping-basket"></i></a></li>
+                            <li><a data-bs-toggle="modal" href=".quick-view" class="btn btn-default"><i
+                                        class="fa fa-eye"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="productCaption clearfix">
+                    <a href="single-product.html">
+                        <h4>{{ product.title }}</h4>
+                    </a>
+                    <h3>${{ product.price }}</h3>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
