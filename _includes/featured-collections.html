@@ -1,7 +1,7 @@
 <section class="mainContent clearfix featured_collection_slider_area">
     <div class="container">
         <div class="page-header">
-            <h4>Featured Collection</h4>
+            <h4>Collections</h4>
         </div>
     </div>
 
@@ -10,7 +10,7 @@
             {% for collections_hash in site.data.collections %}
             {% assign collection = collections_hash[1] %}
             {% if collection.featured == true %}
-            <div class="thumbnail" onclick="location.href='{{ collection.name }}.html';">
+            <div class="thumbnail" onclick="location.href='{{ collection.name | slugify }}.html';">
                 <div class="imageWrapper">
                     <img src="assets/img/home/featured-collection/featured-collection-02.jpg"
                         alt="feature-collection-image">
