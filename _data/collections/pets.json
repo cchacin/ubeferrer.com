@@ -1,1 +1,21 @@
-{"products": [{"title": "Earth Rated Hypoallergenic Dog Wipes, Cleaning and Odor-Controlling Grooming Wipes for Paws, Body, and Butt, Perfect for Puppy and Adult Dogs, Lavender Scented, 100 Count", "featured": true, "price": "9.99", "link": "https://amzn.to/3BzrXdi", "asin": "B07NHGX19F"}, {"title": "Diggin\u2019 Your Dog Firm Up Pumpkin for Dogs & Cats, 100% Made in USA, Pumpkin Powder for Dogs, Digestive Support, Apple Pectin, Fiber, Healthy Stool, 4 oz", "featured": true, "price": "14.99", "link": "https://amzn.to/4eoAfDy", "asin": "B006CBD7UQ"}], "name": "Pets", "featured": false, "starts_from": "14.99"}
+{
+    "featured": true,
+    "name": "Pets",
+    "products": [
+        {
+            "asin": "B07NHGX19F",
+            "featured": true,
+            "link": "https://amzn.to/3BzrXdi",
+            "price": 9.99,
+            "title": "Earth Rated Hypoallergenic Dog Wipes, Cleaning and Odor-Controlling Grooming Wipes for Paws, Body, and Butt, Perfect for Puppy and Adult Dogs, Lavender Scented, 100 Count"
+        },
+        {
+            "asin": "B006CBD7UQ",
+            "featured": true,
+            "link": "https://amzn.to/4eoAfDy",
+            "price": 14.99,
+            "title": "Diggin\u2019 Your Dog Firm Up Pumpkin for Dogs & Cats, 100% Made in USA, Pumpkin Powder for Dogs, Digestive Support, Apple Pectin, Fiber, Healthy Stool, 4 oz"
+        }
+    ],
+    "starts_from": 9.99
+}

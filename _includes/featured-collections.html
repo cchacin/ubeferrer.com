@@ -10,7 +10,7 @@
             {% for collections_hash in site.data.collections %}
             {% assign collection = collections_hash[1] %}
             {% if collection.featured == true %}
-            <div class="thumbnail" onclick="location.href='single-product.html';">
+            <div class="thumbnail" onclick="location.href='{{ collection.name }}.html';">
                 <div class="imageWrapper">
                     <img src="assets/img/home/featured-collection/featured-collection-02.jpg"
                         alt="feature-collection-image">

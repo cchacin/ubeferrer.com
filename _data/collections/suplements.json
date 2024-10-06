@@ -1,1 +1,21 @@
-{"products": [{"title": "Vital Proteins Chocolate Collagen Powder Supplement (Type I, III) for Skin Hair Nail Joint - Hydrolyzed Collagen - Dairy and Gluten Free - 27g per Serving - Chocolate Flavor, 26.8 oz Canister", "featured": true, "price": "43.34", "link": "https://amzn.to/4gFQca3", "asin": "B098RSGGGC"}, {"title": "Nespresso Capsules Vertuo, Double Espresso Scuro, Dark Roast Espresso Coffee, 30-Count Coffee Pods, Brews 2.7oz", "featured": true, "price": "34.5", "link": "https://amzn.to/3XGGQ5b", "asin": "B07M8YV12G"}], "name": "Suplements", "featured": false, "starts_from": "34.5"}
+{
+    "featured": true,
+    "name": "Suplements",
+    "products": [
+        {
+            "asin": "B098RSGGGC",
+            "featured": true,
+            "link": "https://amzn.to/4gFQca3",
+            "price": 43.34,
+            "title": "Vital Proteins Chocolate Collagen Powder Supplement (Type I, III) for Skin Hair Nail Joint - Hydrolyzed Collagen - Dairy and Gluten Free - 27g per Serving - Chocolate Flavor, 26.8 oz Canister"
+        },
+        {
+            "asin": "B07M8YV12G",
+            "featured": true,
+            "link": "https://amzn.to/3XGGQ5b",
+            "price": 34.5,
+            "title": "Nespresso Capsules Vertuo, Double Espresso Scuro, Dark Roast Espresso Coffee, 30-Count Coffee Pods, Brews 2.7oz"
+        }
+    ],
+    "starts_from": 34.5
+}
